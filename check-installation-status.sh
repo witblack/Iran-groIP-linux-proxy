@@ -27,7 +27,7 @@ show_path_status "$service_path" 'systemd unit file'
 echo
 echo 'Installed project files'
 echo '-----------------------'
-for file in connect-to-us.sh update-iran-ip-list.sh install.sh uninstall.sh check-installation-status.sh iran-ipv4.txt .env; do
+for file in connect-to-us.sh update-iran-ip-list.sh install.sh uninstall.sh check-installation-status.sh service-control.sh iran-ipv4.txt .env; do
   show_path_status "$install_dir/$file" "$file"
 done
 
