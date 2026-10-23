@@ -2,6 +2,16 @@
 
 This project routes Internet traffic through an SSHuttle connection while keeping the following destinations outside the proxy:
 
+## Quick install
+
+Copy and run this single command in a Linux terminal:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/witblack/Iran-groIP-linux-proxy/main/quick-install.sh | sudo bash
+```
+
+It downloads the small bootstrap script directly from GitHub, clones this project into `/opt/Iran-groIP-linux-proxy`, and starts `install.sh`. The installer then checks the required packages and asks for all connection settings.
+
 - Iranian IPv4 ranges, loaded from the local `iran-ipv4.txt` file
 - `localhost` and `127.0.0.0/8`
 - Private networks: `10.0.0.0/8`, `172.16.0.0/12`, and `192.168.0.0/16`
