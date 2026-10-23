@@ -48,9 +48,9 @@ else
   fi
 
   if systemctl is-active --quiet "$service_name"; then
-    echo '[OK]      Service state: active'
+    echo '[OK]      Service power: ON (active)'
   else
-    echo '[INFO]    Service state: inactive or failed'
+    echo '[INFO]    Service power: OFF (inactive or failed)'
   fi
 fi
 

@@ -111,7 +111,7 @@ The uninstaller asks for confirmation, stops and disables the service, removes i
 
 ## Check installation status
 
-After installation, run the read-only status checker to see whether the installation directory, expected project files, `.env`, IP list, and systemd unit file exist. It also reports whether the service is enabled at boot or currently active without printing any SSH credentials:
+After installation, run the read-only status checker to see whether the installation directory, expected project files, `.env`, IP list, and systemd unit file exist. It also reports whether the service is enabled at boot and explicitly shows its current systemd power state as `ON` or `OFF`, without printing any SSH credentials:
 
 ```bash
 /opt/Iran-groIP-linux-proxy/check-installation-status.sh
