@@ -9,6 +9,11 @@ if ((EUID != 0)); then
   exit 1
 fi
 
+if [[ ! -r /dev/tty ]]; then
+  echo 'A terminal is required because the installer asks interactive questions.' >&2
+  exit 1
+fi
+
 if ! command -v git >/dev/null 2>&1; then
   cat >&2 <<'EOF'
 Git is required to download the project. Install it first, then run the quick-install command again.
@@ -27,4 +32,4 @@ fi
 
 git clone --depth 1 "$repository_url" "$install_dir"
 echo 'Project cloned successfully. Starting the installer...'
-exec /usr/bin/env bash "$install_dir/install.sh"
+exec /usr/bin/env bash "$install_dir/install.sh" </dev/tty

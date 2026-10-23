@@ -10,7 +10,7 @@ Copy and run this single command in a Linux terminal:
 curl -fsSL https://raw.githubusercontent.com/witblack/Iran-groIP-linux-proxy/main/quick-install.sh | sudo bash
 ```
 
-It downloads the small bootstrap script directly from GitHub, clones this project into `/opt/Iran-groIP-linux-proxy`, and starts `install.sh`. The installer then checks the required packages and asks for all connection settings.
+It downloads the small bootstrap script directly from GitHub, clones this project into `/opt/Iran-groIP-linux-proxy`, and starts `install.sh`. The installer reads its interactive questions from your terminal, then checks the required packages and asks for all connection settings.
 
 - Iranian IPv4 ranges, loaded from the local `iran-ipv4.txt` file
 - `localhost` and `127.0.0.0/8`
