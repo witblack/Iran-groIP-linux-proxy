@@ -26,4 +26,5 @@ if [[ -e $install_dir ]]; then
 fi
 
 git clone --depth 1 "$repository_url" "$install_dir"
-exec "$install_dir/install.sh"
+echo 'Project cloned successfully. Starting the installer...'
+exec /usr/bin/env bash "$install_dir/install.sh"
